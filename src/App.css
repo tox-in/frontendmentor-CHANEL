@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat','Fraunces';
+  font-size: 14px;
+}
+.afro{
+  display: flex;
+  flex-direction: column;
+  background: hsl(30, 38%, 92%);
+}
+
+.isabelle{
+  display: flex;
+  flex-direction: column;
+  margin-top:1rem;
+  width: 100%;
+  height: auto;
+  max-width: fit-content;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: .4rem;
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: .7rem;
+}
+.new{
+  font-weight: 700;
+  font-size:1.8rem;
+  color: hsl(158, 36%, 37%);
+}
+.original{
+  margin-left: 1rem;
+  text-decoration: line-through;
+  color:hsl(228, 12%, 48%);
+}
+img{
+  border-top-right-radius: .4rem;
+  border-top-left-radius: .4rem;
+}
+.perfume{
+  padding-left: .7rem;
+  letter-spacing: .2rem;
+  color:hsl(228, 12%, 48%);
+  font-weight: 300;
+  font-family: sans-serif;
+  padding-top: 0.2rem;
+}
+.gabrielle{
+  padding-left: .7rem;
+  font-size: 1.8rem;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+.floral{
+  padding-left: .7rem;
+  padding-right: 0.3rem;
+  color:hsl(228, 12%, 48%);
+  font-size: .8rem;
+  font-family: sans-serif;
+}
+button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  background: hsl(158, 36%, 37%);
+  height: 3.6rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  width:200px;
+  font-family: sans-serif;
+  border-radius: .4rem;
+  font-weight: 700;
+}
+.forbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1.2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: hsl(30, 38%, 92%);
+  }
+  .afro{
+    display: flex;
+    position: absolute;
+    top: 7rem;
+    left: 25rem;
+    justify-content: center;
+  }
+  .isabelle{
+    display: flex;
+    flex-direction: row;
+    width: 80vh;
+    background: white;
+  }
+  .perfume{
+    padding-top: 1.3rem;
+    padding-bottom: .7rem;
+  }
+  .floral{
+    font-size: .77rem;
+    font-family: sans-serif;
+  }
+  img{
+    border-bottom-left-radius: .4rem;
+    border-top-right-radius: 0rem;
+  }
+}
